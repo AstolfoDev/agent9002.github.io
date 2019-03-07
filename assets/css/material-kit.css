@@ -21,13 +21,17 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 /* Global */
+.epic{
+  display:inline;
+}
+
 .line-1{
     position: relative;
-    top: 50%;
+    top: 60%;
     width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
+    font-size: 120%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -38,11 +42,11 @@
 .anim-typewriter{
   animation: typewriter 3s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
-              font-family: 'Anonymous Pro', monospace;
+              font-family: 'Minecraft', monospace;
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 15em;}
+  to{width: 20em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}

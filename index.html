@@ -15,28 +15,31 @@
   <link href="./assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="./assets/demo/demo.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/minecraft-webfont.css" />
   <script type="text/javascript">
 var quote = new Array()
 quote[0] = '>Oh yeah, Mr Krabs'
 quote[1] = '>Well yes, but actually no'
 quote[2] = '>We are number one!'
-quote[3] = '>Wow'
+quote[3] = '>+10 happy points'
 quote[4] = '>bass boosted'
 quote[5] = '>DELETE &#39;System32&#39; FROM windows'
 quote[6] = '>epic_meme = list()'
 quote[7] = '>Generating terrain...'
 quote[8] = '>Cheat Code Activated'
-quote[9] = '>hox hud initialised'
+quote[9] = '>Ok, now this is epic'
 quote[10] = '>2 SKILL POINTS UNLOCKED'
-quote[11] = '>Hi'
-quote[12] = 'Get lucky'
-quote[13] = 'Another one bites the dust'
+quote[11] = '>oh hey, i didnt see ya there'
+quote[12] = '>intiating welcome message'
+quote[13] = '>Another one bites the dust'
+quote[14] = '>ok this is pretty epic'
 
 var randomquote = Math.floor(Math.random()*(quote.length));
 function printquote(){
 document.write(quote[randomquote]);
 }
 </script>
+<script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
 
 
 </head>
@@ -93,22 +96,41 @@ document.write(quote[randomquote]);
     </div>
   </div>
   <div class="main main-raised">
-    <div class="section section-basic">
+    <div class="section main">
       <div class="container">
-        <div class="title">
-          <h2>Basic Elements</h2>
-        </div>
-        <div class="alert alert-info">
+                        <center><h2>About Us</h2></center>
+                  <center><span class="badge badge-pill badge-info">Oh wow, you made it!</span></center>
+                  <br>
+                  <center><div><h3 class="epic">High quality <h3 class="epic" id="typewriter"></h3> <h3 class="epic">development.</h3></div></center>
+                  <h3>Electra Studios offers
+<script src='../../dist/core.js'></script>
+<script type='text/javascript'>
+  const typewriter = new Typewriter('#typewriter', {
+    loop: true,
+  });
+  typewriter.typeString('video game')
+    .pauseFor(200)
+    .deleteAll()
+    .typeString('application')
+    .pauseFor(200)
+    .deleteAll()
+    .typeString('discord bot')
+    .pauseFor(200)
+    .start();
+</script>
+                </div>
+<h5>&nbsp;</h5>
+      </div>
+      <div class="alert alert-info bg-dark">
         <div class="container">
           <div class="alert-icon">
             <i class="material-icons">info_outline</i>
           </div>
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true"><i class="material-icons">clear</i></span>
           </button>
-          <b>Info alert:</b> You've got some friends nearby, stop looking at your phone and find them...
+          <b>Info alert:</b> You&apos;ve got some friends nearby, stop looking at your phone and find them...
         </div>
       </div>
+      <div class="container">
         <!--  buttons -->
         <div id="buttons" class="cd-section">
           <div class="title">
@@ -116,6 +138,7 @@ document.write(quote[randomquote]);
               <br>
               <small>Pick your style</small>
             </h3>
+          </div>
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
               <button class="btn btn-primary">Default</button>

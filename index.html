@@ -10,12 +10,19 @@
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- CSS Files -->
   <link href="./assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="./assets/demo/demo.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/minecraft-webfont.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  new Crate({
+    server: '544497778429263903',
+    channel: '549169173599879198',
+    shard: 'https://disweb.deploys.io'
+  })
+</script>
   <script type="text/javascript">
 var quote = new Array()
 quote[0] = '>Oh yeah, Mr Krabs'
@@ -90,6 +97,7 @@ document.write(quote[randomquote]);
           <div class="brand">
             <h1>Electra Studios</h1>
             <p class="line-1 anim-typewriter"><script type="text/javascript">printquote();</script></p>
+            <button class="btn btn-info btn-link" href="javascript:void(0)" onclick="scrollToDownload()"><font color="white"><i class="fa-4x fas fa-arrow-circle-down"></i></font></button>
           </div>
         </div>
       </div>
@@ -97,12 +105,21 @@ document.write(quote[randomquote]);
   </div>
   <div class="main main-raised">
     <div class="section main">
+      <div class="section section-download" id="downloadSection">
       <div class="container">
                         <center><h2>About Us</h2></center>
                   <center><span class="badge badge-pill badge-info">Oh wow, you made it!</span></center>
                   <br>
-                  <center><div><h3 class="epic">High quality <h3 class="epic" id="typewriter"></h3> <h3 class="epic">development.</h3></div></center>
-                  <h3>Electra Studios offers
+                  <center><div><h3 class="epic">Electra Studios offers quality <h3 class="epic" id="typewriter"></h3> <h3 class="epic">development.<br>with a dedicated team and fast support.</h3></div></center>
+				  <center><button class="btn btn-info bg-discord" onclick="window.location.href='https://discord.gg/rpfMyfR'"><i class="fab fa-discord"></i> &nbsp; Join our Discord<div class="ripple-container"></div><br></center><br>
+				  <center></button><widgetbot
+  server="544497778429263903"
+  channel="549169173599879198"
+  width="800"
+  height="600"
+  shard="https://disweb.deploys.io"
+></widgetbot></center>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
 <script src='../../dist/core.js'></script>
 <script type='text/javascript'>
   const typewriter = new Typewriter('#typewriter', {
@@ -114,24 +131,27 @@ document.write(quote[randomquote]);
     .typeString('application')
     .pauseFor(200)
     .deleteAll()
-    .typeString('discord bot')
+    .typeString('program')
     .pauseFor(200)
     .start();
 </script>
                 </div>
 <h5>&nbsp;</h5>
-      </div>
+ </div>
       <div class="alert alert-info bg-dark">
-        <div class="container">
+        <!-- <div class="container">
           <div class="alert-icon">
             <i class="material-icons">info_outline</i>
           </div>
           </button>
           <b>Info alert:</b> You&apos;ve got some friends nearby, stop looking at your phone and find them...
         </div>
-      </div>
+      </div> -->
+
+
+      <!--  ignore below -->
+      <!--
       <div class="container">
-        <!--  buttons -->
         <div id="buttons" class="cd-section">
           <div class="title">
             <h3>Buttons
@@ -181,9 +201,7 @@ document.write(quote[randomquote]);
             </div>
           </div>
         </div>
-        <!--                 end buttons		         -->
         <div class="space-50"></div>
-        <!--                 inputs -->
         <div id="inputs">
           <div class="title">
             <h3>Inputs</h3>
@@ -245,9 +263,7 @@ document.write(quote[randomquote]);
             </div>
           </div>
         </div>
-        <!--                 end inputs -->
         <div class="space-70"></div>
-        <!--                 textarea/checkbox/radio/toggle -->
         <div id="checkRadios">
           <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6">
@@ -346,7 +362,6 @@ document.write(quote[randomquote]);
           </div>
         </div>
         <div class="space-70"></div>
-        <!--    progress/sliders -->
         <div id="progress">
           <div class="row">
             <div class="col-md-6">
@@ -380,9 +395,6 @@ document.write(quote[randomquote]);
                 <h3>Pagination</h3>
               </div>
               <ul class="pagination pagination-primary">
-                <!--
-                            color-classes: "pagination-primary", "pagination-info", "pagination-success", "pagination-warning", "pagination-danger"
-                        -->
                 <li class="page-item">
                   <a href="javascript:void(0);" class="page-link">1</a>
                 </li>
@@ -437,8 +449,6 @@ document.write(quote[randomquote]);
             </div>
           </div>
         </div>
-        <!--                 end progress -->
-        <!--                 sliders -->
         <div id="sliders">
           <div class="row">
             <div class="col-md-6">
@@ -462,12 +472,10 @@ document.write(quote[randomquote]);
             </div>
           </div>
         </div>
-        <!--                 end sliders -->
       </div>
     </div>
     <div class="section section-navbars cd-section" id="navigation">
       <div class="container">
-        <!--                 menu -->
         <div class="row">
           <div class="col-md-6">
             <div class="title">
@@ -555,15 +563,12 @@ document.write(quote[randomquote]);
             </nav>
           </div>
         </div>
-        <!-- 	            end menu -->
         <div class="title">
           <h3>Navigation</h3>
         </div>
       </div>
-      <!--             navbar -->
       <div id="navbar">
         <div class="navigation-example" style="background-image: url('./assets/img//bg.jpg');">
-          <!--        rose navbar with search form -->
           <nav class="navbar navbar-expand-lg bg-rose">
             <div class="container">
               <div class="navbar-translate">
@@ -595,8 +600,6 @@ document.write(quote[randomquote]);
               </div>
             </div>
           </nav>
-          <!--        end rose navbar -->
-          <!--        info navbar -->
           <nav class="navbar navbar-expand-lg bg-info">
             <div class="container">
               <div class="navbar-translate">
@@ -629,8 +632,6 @@ document.write(quote[randomquote]);
               </div>
             </div>
           </nav>
-          <!--        end info navbar -->
-          <!--        primary navbar  -->
           <nav class="navbar navbar-expand-lg bg-primary">
             <div class="container">
               <div class="navbar-translate">
@@ -663,11 +664,8 @@ document.write(quote[randomquote]);
               </div>
             </div>
           </nav>
-          <!--        end primary navbar -->
-          <!--         inverse navbar with notifications     -->
           <nav class="navbar navbar-inverse navbar-expand-lg bg-dark" role="navigation-demo">
             <div class="container">
-              <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-translate">
                 <a class="navbar-brand" href="#0">Navbar with notification</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -677,7 +675,6 @@ document.write(quote[randomquote]);
                   <span class="navbar-toggler-icon"></span>
                 </button>
               </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
@@ -710,15 +707,10 @@ document.write(quote[randomquote]);
                   </li>
                 </ul>
               </div>
-              <!-- /.navbar-collapse -->
             </div>
-            <!-- /.container-->
           </nav>
-          <!--            end inverse navbar -->
-          <!--        default navbar with profile photo -->
           <nav class="navbar navbar-default navbar-expand-lg" role="navigation-demo">
             <div class="container">
-              <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-translate">
                 <a class="navbar-brand" href="#0">Navbar with profile</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -728,7 +720,6 @@ document.write(quote[randomquote]);
                   <span class="navbar-toggler-icon"></span>
                 </button>
               </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
@@ -748,12 +739,8 @@ document.write(quote[randomquote]);
                   </li>
                 </ul>
               </div>
-              <!-- /.navbar-collapse -->
             </div>
-            <!-- /.container-->
           </nav>
-          <!--                end default navbar -->
-          <!--        transparent navbar -->
           <nav class="navbar navbar-transparent navbar-expand-lg">
             <div class="container">
               <div class="navbar-translate">
@@ -786,14 +773,13 @@ document.write(quote[randomquote]);
               </div>
             </div>
           </nav>
-          <!--        end transparent navbar-->
         </div>
       </div>
-      <!-- end navbar  -->
+
     </div>
     <div class="section section-tabs">
       <div class="container">
-        <!--                nav tabs	             -->
+
         <div id="nav-tabs">
           <h3>Navigation Tabs</h3>
           <div class="row">
@@ -801,10 +787,10 @@ document.write(quote[randomquote]);
               <h3>
                 <small>Tabs with Icons on Card</small>
               </h3>
-              <!-- Tabs with icons on Card -->
+
               <div class="card card-nav-tabs">
                 <div class="card-header card-header-primary">
-                  <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+
                   <div class="nav-tabs-navigation">
                     <div class="nav-tabs-wrapper">
                       <ul class="nav nav-tabs" data-tabs="tabs">
@@ -841,16 +827,16 @@ document.write(quote[randomquote]);
                   </div>
                 </div>
               </div>
-              <!-- End Tabs with icons on Card -->
+
             </div>
             <div class="col-md-6">
               <h3>
                 <small>Tabs on Plain Card</small>
               </h3>
-              <!-- Tabs on Plain Card -->
+
               <div class="card card-nav-tabs card-plain">
                 <div class="card-header card-header-danger">
-                  <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+
                   <div class="nav-tabs-navigation">
                     <div class="nav-tabs-wrapper">
                       <ul class="nav nav-tabs" data-tabs="tabs">
@@ -881,16 +867,16 @@ document.write(quote[randomquote]);
                   </div>
                 </div>
               </div>
-              <!-- End Tabs on plain Card -->
+
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- 	            end nav tabs -->
+
     <div class="section section-white">
       <div class="container">
-        <!--                 nav pills -->
+
         <div id="navigation-pills">
           <div class="title">
             <h3>Navigation Pills</h3>
@@ -903,9 +889,7 @@ document.write(quote[randomquote]);
           <div class="row">
             <div class="col-lg-6 col-md-8">
               <ul class="nav nav-pills nav-pills-icons" role="tablist">
-                <!--
-                                color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
-                            -->
+
                 <li class="nav-item">
                   <a class="nav-link" href="#dashboard-1" role="tab" data-toggle="tab">
                     <i class="material-icons">dashboard</i> Dashboard
@@ -944,9 +928,7 @@ document.write(quote[randomquote]);
               <div class="row">
                 <div class="col-md-3">
                   <ul class="nav nav-pills nav-pills-icons flex-column" role="tablist">
-                    <!--
-                                        color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
-                                    -->
+
                     <li class="nav-item">
                       <a class="nav-link active" href="#dashboard-2" role="tab" data-toggle="tab">
                         <i class="material-icons">dashboard</i> Dashboard
@@ -977,10 +959,10 @@ document.write(quote[randomquote]);
             </div>
           </div>
         </div>
-        <!--                 end nav pills -->
+
       </div>
     </div>
-    <!--        notifications -->
+
     <div class="section cd-section section-notifications" id="notifications">
       <div class="container">
         <div class="title">
@@ -1033,10 +1015,10 @@ document.write(quote[randomquote]);
       </div>
       <div class="clearfix"></div>
     </div>
-    <!--        end notifications -->
+
     <div class="section">
       <div class="container tim-container">
-        <!--     	        typography -->
+
         <div id="typography" class="cd-section">
           <div class="title">
             <h2>Typography</h2>
@@ -1140,9 +1122,9 @@ document.write(quote[randomquote]);
             </div>
           </div>
         </div>
-        <!--                 end typography -->
+
         <div class="space-50"></div>
-        <!--                 images -->
+
         <div id="images">
           <div class="title">
             <h2>Images</h2>
@@ -1169,7 +1151,7 @@ document.write(quote[randomquote]);
           <div class="row">
           </div>
         </div>
-        <!--                 end images	             -->
+
         <div class="space-50"></div>
       </div>
     </div>
@@ -1178,7 +1160,7 @@ document.write(quote[randomquote]);
         <div class="title">
           <h2>Javascript components</h2>
         </div>
-        <!--                 modals -->
+
         <div class="row" id="modals">
           <div class="col-md-6">
             <div class="title">
@@ -1224,18 +1206,18 @@ document.write(quote[randomquote]);
             <button type="button" class="btn" data-toggle="tooltip" data-placement="right" title="Tooltip on right" data-container="body">On right</button>
           </div>
         </div>
-        <!--                 end modals	             -->
+
         <div class="title">
           <h3>Carousel</h3>
         </div>
       </div>
     </div>
-    <!--         carousel  -->
+
     <div class="section section-games" id="carousel">
       <div class="container">
         <div class="row">
           <div class="col-md-8 mr-auto ml-auto">
-            <!-- Carousel Card -->
+
             <div class="card card-raised card-carousel">
               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
                 <ol class="carousel-indicators">
@@ -1279,12 +1261,12 @@ document.write(quote[randomquote]);
                 </a>
               </div>
             </div>
-            <!-- End Carousel Card -->
+
           </div>
         </div>
       </div>
     </div>
-    <!--         end carousel -->
+
     <div class="section">
       <div class="container text-center">
         <div class="row">
@@ -1450,23 +1432,19 @@ document.write(quote[randomquote]);
       <nav class="float-left">
         <ul>
           <li>
-            <a href="https://www.creative-tim.com">
-              Creative Tim
+            <a href="https://www.electrastudios.me">
+              Home
             </a>
           </li>
           <li>
-            <a href="https://creative-tim.com/presentation">
-              About Us
+
             </a>
           </li>
           <li>
-            <a href="http://blog.creative-tim.com">
-              Blog
+
             </a>
           </li>
           <li>
-            <a href="https://www.creative-tim.com/license">
-              Licenses
             </a>
           </li>
         </ul>
@@ -1475,10 +1453,12 @@ document.write(quote[randomquote]);
         &copy;
         <script>
           document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+        </script>, Electra Studios
       </div>
     </div>
+  </div>
+</div>
+</div>
   </footer>
   <!--   Core JS Files   -->
   <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>

@@ -55,14 +55,28 @@
                 <p class="text-center">Our dedicated team of specialists</p>
             </div>
             <div class="row people">
-                <div class="col-md-6 col-lg-4 item">
+                <div class="col-md-6 col-lg-4 item" id="tommydiv">
                     <div class="box"><img class="rounded-circle" src="https://i.postimg.cc/SKjk56pS/ACCA2168-414-D-44-E5-899-C-4-A46073-AF89-D.jpg">
                         <h3 class="name">Tommy R.</h3>
                         <p class="title">director</p>
-                        <p class="description">asdf</p>
-                        <div class="social"><a href="#"><i class="fab fa-discord"></i></a><a href="https://twitter.com/fansyboi"><i class="fa fa-twitter" href="https://twitter.com/fansyboi"></i></a><a href="#"><i class="la la-cube"></i></a></div>
+                        <p class="description" id="tommy">I am the bone of my code
+Node.js is my body, and C# is my blood.
+I have compiled over a thousand lines.
+Unknown to wireframes, nor known to pseudocode.
+I have withstood syntax errors.
+Yet those errors will always haunt me.
+So as I type,
+UNLIMITED PROGRAM WORKS</p>
+                        <div class="social"><a><i class="fab fa-discord" onclick="tommyfunction()"></i></a><a href="https://twitter.com/fansyboi"><i class="fa fa-twitter" href="https://twitter.com/fansyboi"></i></a><a href="https://www.mc-market.org/members/51242/"><i class="fa fa-cube"></i></a></div>
                     </div>
                 </div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+          <script>
+          function tommyfunction(){
+            $('#tommy').css('opacity', 0);
+            setTimeout(function(){ document.getElementById("tommy").textContent = "@agent#7574";$('#tommy').css('opacity', 1);}, 450);
+          }
+          </script>
                 <div class="col-md-6 col-lg-4 item">
                     <div class="box"><img class="rounded-circle" src="https://i.postimg.cc/wjw90WZ4/3-F3-D49-E4-F300-48-AD-8282-2962-F4-E6-ADE4.jpg">
                         <h3 class="name">Casper D.</h3>
